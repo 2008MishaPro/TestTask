@@ -1,13 +1,12 @@
 .mainPage{
     width: 1040px;
-    padding-inline: 20px;
     justify-content: center;
     justify-self: center;
     justify-items: center;
 }
 
 .usersContainer{
-    min-height: 550px;
+    min-height: 300px;
     display: grid;
     grid-template-columns: repeat(4, 245px);
     gap: 20px;
