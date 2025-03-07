@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/favourites" element={<FavouritesPage />} />
-        <Route path="/user: userId" element={<UserPage />} />
+        <Route path="/user/:userId/:name" element={<UserPage />} />
       </Routes>
     </div>
   );

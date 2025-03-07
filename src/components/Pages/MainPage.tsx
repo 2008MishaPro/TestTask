@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
 import { GetUsers } from "../requests/userFeach";
 import { UserCard } from "../Elements/Cards/UserCard";
+import { Header } from "../Elements/Header";
+import "../Styles/UsersList.css"
 
 export const MainPage = () => {
   const [users, setUsers] = useState([]);
   const [currentPage, setPage] = useState(1);
   const [canShowNext, setShowState] = useState(true);
-  const usersLimitPerPage = 12;
+  const usersLimitPerPage = 20;
   useEffect(() => {
     const getData = async (page: number) => {
       const data = await GetUsers(
@@ -32,7 +34,11 @@ export const MainPage = () => {
         </>
       );
     } else {
-      return <>Больше ничего нет 😭</>;
+      return (
+          <div className="noContent">
+              <p>Больше ничего нет 😭</p>
+          </div> 
+      )
     }
   };
   const nextButton = () => {
@@ -45,13 +51,15 @@ export const MainPage = () => {
   };
   return (
     <div className="mainPage">
-      <div className="usersContainer">
+      <Header />
+      <div className={`usersContainer ${canShowNext ? '':'noCards'}`}>
         <UserRender />
       </div>
-      <div className="buttons">
+      <div className="buttonsContainer">
         <button onClick={prevButton} disabled={currentPage === 1}>
           ←
         </button>
+        <p>{currentPage}</p>
         <button onClick={nextButton} disabled={!canShowNext}>
           →
         </button>

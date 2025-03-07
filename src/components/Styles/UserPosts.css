@@ -1,0 +1,30 @@
+.userPage{
+    max-width: 90%;
+    justify-self: center;
+}
+.star{
+    display: inline-flex;    
+    font-size: 42px;
+}
+.favourite{
+    color: #FEE600;
+}
+.userAddToFavourite{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.userName{
+    font-size: 32px;
+}
+.postsContainer{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.userPost{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #2E2B2B;
+}
