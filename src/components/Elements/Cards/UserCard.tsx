@@ -20,7 +20,7 @@ export const UserCard = ({
   const navigate = useNavigate();
   const ShowUserPage = () => {
     try {
-        navigate(`/user/${Number(id)}/${encodeURIComponent(name)}`);
+      navigate(`/user/${Number(id)}/${encodeURIComponent(name)}`);
     } catch (error) {
       alert(`Не удалось перейти на страницу: ${error}`);
     }

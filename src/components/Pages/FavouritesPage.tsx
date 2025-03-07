@@ -7,6 +7,7 @@ export const FavouritesPage = () => {
   const allFavUsers = getFavouriteUsers();
   const [whatsShowing, setShowing] = useState(true)
   const UserRender = () => {
+    //если есть пользователи в сторе, то отобразить, иначе нет
     if (allFavUsers && allFavUsers.length>0) {
         setShowing(true)
       return (

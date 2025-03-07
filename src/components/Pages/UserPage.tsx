@@ -14,7 +14,7 @@ export const UserPage = () => {
   const [postData, setData] = useState([]);
   const [favouData, setFavourite] = useState([]);
   const [isFavourite, setIsFavourite] = useState(false);
-
+  //посты
   useEffect(() => {
     const getData = async (id: number) => {
       const data = await GetUsers(
@@ -24,7 +24,7 @@ export const UserPage = () => {
     };
     getData(Number(userId));
   }, []);
-
+  //добавление в избранное, вернее проверка и сбор данных для добавления
   useEffect(() => {
     const getToSet = async (id: number) => {
       const data = await GetUsers(
@@ -33,6 +33,7 @@ export const UserPage = () => {
       setFavourite(data);
 
       const favourites = getFavouriteUsers();
+      //проверка на наличие в сторе
       const isUserFavourite = favourites.some((user) => user.id === id);
       setIsFavourite(isUserFavourite);
     };
@@ -59,6 +60,7 @@ export const UserPage = () => {
             justifyContent: "space-between",
             fontSize: "30px",
           }}
+          className="secondHeader"
         >
           <div className="userAddToFavourite" onClick={clickToFavourite}>
             <h2 className="userName">{name} </h2>

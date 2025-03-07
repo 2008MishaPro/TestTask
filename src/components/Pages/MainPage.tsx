@@ -10,10 +10,12 @@ export const MainPage = () => {
   const [canShowNext, setShowState] = useState(true);
   const usersLimitPerPage = 20;
   useEffect(() => {
+    //в моём случае пародия на пагинацию
     const getData = async (page: number) => {
       const data = await GetUsers(
         `https://jsonplaceholder.typicode.com/users?_page=${page}&_limit=${usersLimitPerPage}`
       );
+      //проверка есть ли дата для блокировки кнопок
       if (data && data.length > 0) {
         setShowState(true);
       } else {

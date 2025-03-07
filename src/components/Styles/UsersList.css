@@ -12,18 +12,18 @@
     gap: 20px;
 }
 .userCard{
-    padding: 10px;
-    border-radius: 10px;
+    padding: 15px;
+    border-radius: 18px;
     background-color: #2E2B2B;
-    height: 150px;
+    max-height: 150px;
     overflow: hidden;
     text-align: left;
     transition: .1s;
     
 }
 .userCard>h1{
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 600;
     margin: 0;
     padding: 0;
 }
@@ -38,7 +38,7 @@
 .userCard>p{
     font-size: 12px;
     padding: 0;
-    margin-top: 4px;
+    margin-top: 5px;
     }
 
 .userCard:hover{
@@ -49,7 +49,7 @@
 .noContent{
     justify-self: center;
     align-content: center;
-    font-size: 32px;
+    font-size: 24px;
 }
 .noCards{
     display: flex;

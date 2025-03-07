@@ -1,10 +1,20 @@
 header{
     width: 100%;
     height: 50px;
-    font-size: 26px;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
-    /* padding-right: 100px; */
     text-align: end;
-    /* background-color: aqua; */
+    padding: 10px;
+
+}
+.headerPanel{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+span{
+    font-size: 24px;
 }

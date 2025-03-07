@@ -14,9 +14,10 @@ export const Header = () => {
   };
 
   return (
-    <header className="headerPanel">
-      <div onClick={ShowFavouritesPage}>
-        <p>Избранное ☆</p>
+    <header >
+      <div onClick={ShowFavouritesPage} className="headerPanel">
+        <p>Избранное </p>
+        <span>☆</span>
       </div>
     </header>
   );

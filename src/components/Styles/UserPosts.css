@@ -1,10 +1,10 @@
 .userPage{
-    max-width: 90%;
+    max-width: 1040px;
     justify-self: center;
 }
 .star{
     display: inline-flex;    
-    font-size: 42px;
+    font-size: 24px;
 }
 .favourite{
     color: #FEE600;
@@ -15,8 +15,12 @@
     align-items: center;
     gap: 10px;
 }
+.secondHeader>p{
+    font-size: 18px;
+}
 .userName{
-    font-size: 32px;
+    font-size: 24px;
+    line-height: 1
 }
 .postsContainer{
     display: flex;
@@ -27,4 +31,8 @@
     padding: 10px;
     border-radius: 15px;
     background-color: #2E2B2B;
+    font-size: 13px;
+}
+.userPost>h3{
+    font-size: 16px;
 }
