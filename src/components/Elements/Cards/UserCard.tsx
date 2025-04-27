@@ -32,6 +32,7 @@ export const UserCard = ({
       <p>{username}</p>
       <p>{email}</p>
       <p>{phone}</p>
+      <h2>123</h2>
       <p>{website}</p>
       <p>Sasasa</p>
     </div>
