@@ -30,7 +30,7 @@ export const UserCard = ({
     <div className="userCard" onClick={ShowUserPage}>
       <h1>{name}</h1>
       {/*<p>{username}</p>*/}
-      <p>{email}</p>
+      {/*<p>{email}</p>*/}
       <p>{phone}</p>
       <p>{website}</p>
     </div>
