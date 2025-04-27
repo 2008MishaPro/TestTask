@@ -29,8 +29,9 @@ export const UserCard = ({
   return (
     <div className="userCard" onClick={ShowUserPage}>
       <h1>{name}</h1>
-      <p>{username}</p>
-      <p>{email}</p>
+      <h2>{username}</h2>
+      {/*<p>{username}</p>*/}
+      {/*<p>{email}</p>*/}
       <p>{phone}</p>
       <h2>123</h2>
       <p>{website}</p>
