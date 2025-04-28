@@ -25,15 +25,24 @@ export const UserCard = ({
       alert(`Не удалось перейти на страницу: ${error}`);
     }
   };
+  if(!name) {
+      return (
+          <div className="user-card">
+              J
+          </div>
+      )
+  }
 
   return (
-    <div className="userCard" onClick={ShowUserPage}>
-      <h1>{name}</h1>
-      <h2>{username}</h2>
-      {/*<p>{username}</p>*/}
-      {/*<p>{email}</p>*/}
-      <p>{phone}</p>
-      <p>{website}</p>
-    </div>
+      <div className="use">
+        <div className="userCard" onClick={ShowUserPage}>
+          <h1>{name}</h1>
+          <h2>{username}</h2>
+          {/*<p>{username}</p>*/}
+          {/*<p>{email}</p>*/}
+          <p>{phone}</p>
+          <p>{website}</p>
+        </div>
+      </div>
   );
 };
